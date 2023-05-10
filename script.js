@@ -1,5 +1,5 @@
 
-debugger
+
 // Import the `readline` module
 const readline = require('readline');
 
@@ -50,9 +50,6 @@ let checkGuess = (counter = 4) => {
       // Define the `guessNumber` function, which prompts the user to guess the secret number
       const guessNumber = () => {
         rl.question("Guess the number I'm thinking: ", (guessedNumber) => {
-          // Move the cursor to the beginning of the current line and clear it
-          readline.cursorTo(process.stdout, 0);
-          process.stdout.clearLine(0);
 
           if (parseInt(guessedNumber) === secretNumber) {
             // If the user guessed the secret number correctly, display a congratulatory message and call `playAgain`
